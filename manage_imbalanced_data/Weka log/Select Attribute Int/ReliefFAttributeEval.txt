@@ -1,0 +1,111 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.ReliefFAttributeEval -M -1 -D 1 -K 10
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     training-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    1448
+Attributes:   43
+              C_max
+              C_sum
+              D_max
+              D_sum
+              E_max
+              E_sum
+              O_max
+              O_sum
+              P_max
+              P_sum
+              CCC
+              CCD
+              CCO
+              CDC
+              CDD
+              CDO
+              COC
+              COD
+              COO
+              DCC
+              DCD
+              DCO
+              DDC
+              DDD
+              DDO
+              DOC
+              DOD
+              DOO
+              EEE
+              EEO
+              EOE
+              EOO
+              OCC
+              OCD
+              OCO
+              ODC
+              ODD
+              ODO
+              OEE
+              OOC
+              OOD
+              OOO
+              Labels
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (numeric): 43 Labels):
+	ReliefF Ranking Filter
+	Instances sampled: all
+	Number of nearest neighbours (k): 10
+	Equal influence nearest neighbours
+
+Ranked attributes:
+ 0.107117385260456   35 OCO
+ 0.101359339539257   19 COO
+ 0.101357126343449   40 OOC
+ 0.09972546126893     8 O_sum
+ 0.096363689623579   17 COC
+ 0.092667668700487    2 C_sum
+ 0.080976137051247   13 CCO
+ 0.080973876793201   33 OCC
+ 0.079956610617791   11 CCC
+ 0.070499219044421    1 C_max
+ 0.054073069128818   42 OOO
+ 0.05087712241117     7 O_max
+ 0.000000000000155   31 EOE
+ 0.000000000000155   30 EEO
+ 0.000000000000155   14 CDC
+ 0.000000000000155    6 E_sum
+ 0.000000000000155   22 DCO
+ 0.000000000000155    5 E_max
+ 0.000000000000155   39 OEE
+ 0.000000000000155   32 EOO
+ 0.000000000000155   21 DCD
+ 0.000000000000155   26 DOC
+ 0.000000000000155   29 EEE
+ 0.000000000000155   23 DDC
+ 0                    9 P_max
+ 0                   10 P_sum
+ 0                   34 OCD
+-0.000698275260108   12 CCD
+-0.000698275260108   20 DCC
+-0.000698275260108   16 CDO
+-0.000698275260108   36 ODC
+-0.000698275260108   27 DOD
+-0.000698275260108   24 DDD
+-0.000823964806927   25 DDO
+-0.000827323599317    3 D_max
+-0.000961675294933    4 D_sum
+-0.001012499127156   37 ODD
+-0.001256895468194   18 COD
+-0.001333705746805   38 ODO
+-0.001340688499406   28 DOO
+-0.001640946861253   41 OOD
+-0.002653445988409   15 CDD
+
+Selected attributes: 35,19,40,8,17,2,13,33,11,1,42,7,31,30,14,6,22,5,39,32,21,26,29,23,9,10,34,12,20,16,36,27,24,25,3,4,37,18,38,28,41,15 : 42
+

@@ -1,0 +1,107 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CorrelationAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     training-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    1448
+Attributes:   43
+              C_max
+              C_sum
+              D_max
+              D_sum
+              E_max
+              E_sum
+              O_max
+              O_sum
+              P_max
+              P_sum
+              CCC
+              CCD
+              CCO
+              CDC
+              CDD
+              CDO
+              COC
+              COD
+              COO
+              DCC
+              DCD
+              DCO
+              DDC
+              DDD
+              DDO
+              DOC
+              DOD
+              DOO
+              EEE
+              EEO
+              EOE
+              EOO
+              OCC
+              OCD
+              OCO
+              ODC
+              ODD
+              ODO
+              OEE
+              OOC
+              OOD
+              OOO
+              Labels
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (numeric): 43 Labels):
+	Correlation Ranking Filter
+Ranked attributes:
+ 0.51792    1 C_max
+ 0.47711    8 O_sum
+ 0.4573    35 OCO
+ 0.41872   17 COC
+ 0.39761   19 COO
+ 0.3976    40 OOC
+ 0.38747    2 C_sum
+ 0.3688    42 OOO
+ 0.36526    7 O_max
+ 0.30969   13 CCO
+ 0.30968   33 OCC
+ 0.30058   11 CCC
+ 0          6 E_sum
+ 0         14 CDC
+ 0         22 DCO
+ 0          5 E_max
+ 0         21 DCD
+ 0         23 DDC
+ 0         31 EOE
+ 0         30 EEO
+ 0         26 DOC
+ 0         39 OEE
+ 0         32 EOO
+ 0         29 EEE
+-0.0026    36 ODC
+-0.0026    20 DCC
+-0.0026    12 CCD
+-0.0026    27 DOD
+-0.0026    24 DDD
+-0.00306   25 DDO
+-0.00365   37 ODD
+-0.00367   18 COD
+-0.00502    3 D_max
+-0.0052    15 CDD
+-0.00556    4 D_sum
+-0.00824   16 CDO
+-0.00859   38 ODO
+-0.01022   41 OOD
+-0.01028   28 DOO
+-0.01283    9 P_max
+-0.01283   10 P_sum
+-0.01283   34 OCD
+
+Selected attributes: 1,8,35,17,19,40,2,42,7,13,33,11,6,14,22,5,21,23,31,30,26,39,32,29,36,20,12,27,24,25,37,18,3,15,4,16,38,41,28,9,10,34 : 42
+

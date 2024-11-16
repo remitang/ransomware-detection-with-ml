@@ -1,0 +1,79 @@
+Auto-WEKA result:
+best classifier: weka.classifiers.lazy.KStar
+arguments: [-B, 42, -M, m]
+attribute search: weka.attributeSelection.GreedyStepwise
+attribute search arguments: [-C, -B, -N, 998]
+attribute evaluation: weka.attributeSelection.CfsSubsetEval
+attribute evaluation arguments: []
+metric: errorRate
+estimated errorRate: 0.0020635649775755877
+training time on evaluation dataset: 0.003 seconds
+
+You can use the chosen classifier in your own code as follows:
+
+AttributeSelection as = new AttributeSelection();
+ASSearch asSearch = ASSearch.forName("weka.attributeSelection.GreedyStepwise", new String[]{"-C", "-B", "-N", "998"});
+as.setSearch(asSearch);
+ASEvaluation asEval = ASEvaluation.forName("weka.attributeSelection.CfsSubsetEval", new String[]{});
+as.setEvaluator(asEval);
+as.SelectAttributes(instances);
+instances = as.reduceDimensionality(instances);
+Classifier classifier = AbstractClassifier.forName("weka.classifiers.lazy.KStar", new String[]{"-B", "42", "-M", "m"});
+classifier.buildClassifier(instances);
+
+
+Correlation coefficient                  0.9998
+Mean absolute logarithmic error          0.0001
+Mean absolute percentage error         NaN     
+Root mean square logarithmic error       0.0015
+Root mean square percentage error      NaN     
+Mean absolute error                      0.0002
+Root mean squared error                  0.0021
+Relative absolute error                  0.8177 %
+Root relative squared error              2.1089 %
+Total Number of Instances             1448     
+
+
+
+------- 5 BEST CONFIGURATIONS -------
+
+These are the 5 best configurations, as ranked by SMAC
+Please note that this list only contains configurations evaluated on at least 10 folds,
+If you need more configurations, please consider running Auto-WEKA for a longer time.
+
+Configuration #1:
+SMAC Score: 0.06504921931889844
+Argument String:
+-_0__wekaclassifierslazykstar_00_INT_B 42 -_0__wekaclassifierslazykstar_01_E REMOVE_PREV -_0__wekaclassifierslazykstar_02_M m -aseval__wekaattributeselectioncfssubseteval_00_0_M REMOVE_PREV -aseval__wekaattributeselectioncfssubseteval_01_1_L REMOVE_PREV -assearch__wekaattributeselectiongreedystepwise_00_0_C REMOVED -assearch__wekaattributeselectiongreedystepwise_01_1_B REMOVED -assearch__wekaattributeselectiongreedystepwise_02_2_R REMOVE_PREV -assearch__wekaattributeselectiongreedystepwise_03_4_INT_N 998 -attributeeval weka.attributeSelection.CfsSubsetEval -attributesearch weka.attributeSelection.GreedyStepwise -attributetime 60.0 -targetclass weka.classifiers.lazy.KStar 
+
+Configuration #2:
+SMAC Score: 0.06631590243207829
+Argument String:
+-_0__wekaclassifierstreesrandomforest_00_INT_I 26 -_0__wekaclassifierstreesrandomforest_01_features_HIDDEN 1 -_0__wekaclassifierstreesrandomforest_03_2_INT_K 10 -_0__wekaclassifierstreesrandomforest_04_depth_HIDDEN 0 -_0__wekaclassifierstreesrandomforest_05_1_INT_depth 0 -attributesearch NONE -attributetime 60.0 -targetclass weka.classifiers.trees.RandomForest 
+
+Configuration #3:
+SMAC Score: 0.06775920624256347
+Argument String:
+-_0__wekaclassifierstreesrandomforest_00_INT_I 10 -_0__wekaclassifierstreesrandomforest_01_features_HIDDEN 0 -_0__wekaclassifierstreesrandomforest_02_1_INT_K 0 -_0__wekaclassifierstreesrandomforest_04_depth_HIDDEN 0 -_0__wekaclassifierstreesrandomforest_05_1_INT_depth 0 -attributesearch NONE -attributetime 60.0 -targetclass weka.classifiers.trees.RandomForest 
+
+Configuration #4:
+SMAC Score: 0.07631141611211838
+Argument String:
+-_0__wekaclassifiersfunctionsmultilayerperceptron_00_L 0.2514213267001907 -_0__wekaclassifiersfunctionsmultilayerperceptron_01_M 0.6612956854811879 -_0__wekaclassifiersfunctionsmultilayerperceptron_02_B REMOVED -_0__wekaclassifiersfunctionsmultilayerperceptron_03_H o -_0__wekaclassifiersfunctionsmultilayerperceptron_04_C REMOVE_PREV -_0__wekaclassifiersfunctionsmultilayerperceptron_05_R REMOVE_PREV -_0__wekaclassifiersfunctionsmultilayerperceptron_06_D REMOVE_PREV -_0__wekaclassifiersfunctionsmultilayerperceptron_07_S 1 -aseval__wekaattributeselectioncfssubseteval_00_0_M REMOVED -aseval__wekaattributeselectioncfssubseteval_01_1_L REMOVE_PREV -assearch__wekaattributeselectiongreedystepwise_00_0_C REMOVED -assearch__wekaattributeselectiongreedystepwise_01_1_B REMOVE_PREV -assearch__wekaattributeselectiongreedystepwise_02_2_R REMOVED -attributeeval weka.attributeSelection.CfsSubsetEval -attributesearch weka.attributeSelection.GreedyStepwise -attributetime 60.0 -targetclass weka.classifiers.functions.MultilayerPerceptron 
+
+Configuration #5:
+SMAC Score: 0.08590975461177834
+Argument String:
+-_0__wekaclassifierstreesm5p_00_N REMOVED -_0__wekaclassifierstreesm5p_01_INT_M 43 -_0__wekaclassifierstreesm5p_02_U REMOVE_PREV -_0__wekaclassifierstreesm5p_03_R REMOVED -aseval__wekaattributeselectioncfssubseteval_00_0_M REMOVED -aseval__wekaattributeselectioncfssubseteval_01_1_L REMOVE_PREV -assearch__wekaattributeselectionbestfirst_00_0_D 1 -assearch__wekaattributeselectionbestfirst_01_1_INT_N 9 -attributeeval weka.attributeSelection.CfsSubsetEval -attributesearch weka.attributeSelection.BestFirst -attributetime 60.0 -targetclass weka.classifiers.trees.M5P 
+
+----END OF CONFIGURATION RANKING----
+
+Temporary run directories:
+C:\Users\user\AppData\Local\Temp\autoweka15868320372188717718\
+C:\Users\user\AppData\Local\Temp\autoweka615166463897116169\
+C:\Users\user\AppData\Local\Temp\autoweka14452539031770639829\
+C:\Users\user\AppData\Local\Temp\autoweka13716686451780554372\
+C:\Users\user\AppData\Local\Temp\autoweka11510432161002445015\
+
+
+For better performance, try giving Auto-WEKA more time.

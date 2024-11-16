@@ -1,0 +1,115 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.ClassifierAttributeEval -execution-slots 1 -B weka.classifiers.rules.ZeroR -F 5 -T 0.01 -R 1 -E DEFAULT --
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     training-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    1448
+Attributes:   43
+              C_max
+              C_sum
+              D_max
+              D_sum
+              E_max
+              E_sum
+              O_max
+              O_sum
+              P_max
+              P_sum
+              CCC
+              CCD
+              CCO
+              CDC
+              CDD
+              CDO
+              COC
+              COD
+              COO
+              DCC
+              DCD
+              DCO
+              DDC
+              DDD
+              DDO
+              DOC
+              DOD
+              DOO
+              EEE
+              EEO
+              EOE
+              EOO
+              OCC
+              OCD
+              OCO
+              ODC
+              ODD
+              ODO
+              OEE
+              OOC
+              OOD
+              OOO
+              Labels
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (numeric): 43 Labels):
+	Classifier feature evaluator 
+
+	Using 	Wrapper Subset Evaluator
+	Learning scheme: weka.classifiers.rules.ZeroR
+	Scheme options: 
+	Subset evaluation: RMSE
+	Number of folds for accuracy estimation: 5
+
+
+Ranked attributes:
+  0   42 OOO
+  0   14 CDC
+  0   13 CCO
+  0   11 CCC
+  0   15 CDD
+  0   16 CDO
+  0   17 COC
+  0   18 COD
+  0   19 COO
+  0   12 CCD
+  0   10 P_sum
+  0   41 OOD
+  0    3 D_max
+  0    2 C_sum
+  0    9 P_max
+  0    4 D_sum
+  0    5 E_max
+  0    6 E_sum
+  0    7 O_max
+  0    8 O_sum
+  0   20 DCC
+  0   21 DCD
+  0   22 DCO
+  0   35 OCO
+  0   34 OCD
+  0   23 DDC
+  0   36 ODC
+  0   37 ODD
+  0   38 ODO
+  0   39 OEE
+  0   40 OOC
+  0   33 OCC
+  0   32 EOO
+  0   31 EOE
+  0   26 DOC
+  0   24 DDD
+  0   25 DDO
+  0   27 DOD
+  0   30 EEO
+  0   28 DOO
+  0   29 EEE
+  0    1 C_max
+
+Selected attributes: 42,14,13,11,15,16,17,18,19,12,10,41,3,2,9,4,5,6,7,8,20,21,22,35,34,23,36,37,38,39,40,33,32,31,26,24,25,27,30,28,29,1 : 42
+

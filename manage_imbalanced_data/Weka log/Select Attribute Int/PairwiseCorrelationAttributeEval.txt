@@ -1,0 +1,108 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.PairwiseCorrelationAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     training-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    1448
+Attributes:   43
+              C_max
+              C_sum
+              D_max
+              D_sum
+              E_max
+              E_sum
+              O_max
+              O_sum
+              P_max
+              P_sum
+              CCC
+              CCD
+              CCO
+              CDC
+              CDD
+              CDO
+              COC
+              COD
+              COO
+              DCC
+              DCD
+              DCO
+              DDC
+              DDD
+              DDO
+              DOC
+              DOD
+              DOO
+              EEE
+              EEO
+              EOE
+              EOO
+              OCC
+              OCD
+              OCO
+              ODC
+              ODD
+              ODO
+              OEE
+              OOC
+              OOD
+              OOO
+              Labels
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (numeric): 43 Labels):
+	 PairwiseCorrelationAttributeEval evaluator
+
+Ranked attributes:
+20.275    1 C_max
+19.523    8 O_sum
+18.659   35 OCO
+17.316   17 COC
+16.466   19 COO
+16.466   40 OOC
+16.128    2 C_sum
+15.892    7 O_max
+15.787   42 OOO
+13.55    13 CCO
+13.55    33 OCC
+13.39    11 CCC
+ 4.917   41 OOD
+ 4.916   28 DOO
+ 4.915    9 P_max
+ 4.915   10 P_sum
+ 4.915   34 OCD
+ 4.89    38 ODO
+ 4.864   16 CDO
+ 4.852    4 D_sum
+ 4.84     3 D_max
+ 4.84    15 CDD
+ 4.833   18 COD
+ 4.825   12 CCD
+ 4.825   36 ODC
+ 4.825   20 DCC
+ 4.823   37 ODD
+ 4.82    25 DDO
+ 4.815   27 DOD
+ 4.784   24 DDD
+ 4.718    6 E_sum
+ 4.718   39 OEE
+ 4.718   30 EEO
+ 4.718   31 EOE
+ 4.718    5 E_max
+ 4.718   32 EOO
+ 4.718   29 EEE
+ 4.718   26 DOC
+ 4.718   22 DCO
+ 4.718   14 CDC
+ 4.718   23 DDC
+ 4.718   21 DCD
+
+Selected attributes: 1,8,35,17,19,40,2,7,42,13,33,11,41,28,9,10,34,38,16,4,3,15,18,12,36,20,37,25,27,24,6,39,30,31,5,32,29,26,22,14,23,21 : 42
+
